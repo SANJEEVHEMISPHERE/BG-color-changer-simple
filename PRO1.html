@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>colour changer</title>
+    <link rel="stylesheet" href="PRO1.css">
+</head>
+<body>
+    <div id="main">
+        <div class="fst">
+            <h1>Hey Welcome  to magic world</h1>
+        </div>
+        <div class="inst">
+            <h2>Instructions</h2>
+            <ol>
+                <li class="ins">Click on the button to change the background color.</li>
+                <li class="ins">Each click will generate a random color.</li>
+                <li class="ins">Enjoy the colorful experience!</li>
+            </ol>
+        </div>
+        <div class="btn">
+            <button id="yellow" class="button" ></button>
+            <button id="blue" class="button"></button>
+            <button id="green" class="button"></button>
+            <button id="red" class="button"></button>
+            <button id="purple" class="button"></button>
+        </div>
+    </div>
+</body>
+<script>
+    const buttons = document.querySelectorAll('.button');
+    const body = document.querySelector("body");
+    buttons.forEach(function(button) {
+        console.log(button);
+        button.addEventListener('click', function(e) {
+            if(e.target.id ==="yellow"){
+                body.style.backgroundColor = "yellow";
+                const b=document.querySelector(".fst").style.backgroundColor="yellow";
+
+                
+            }
+            else if(e.target.id ==="blue"){
+                body.style.backgroundColor = "blue";
+                            const b=document.querySelector(".fst").style.backgroundColor="blue";
+
+            }
+            else if(e.target.id ==="green"){
+                body.style.backgroundColor = "green";
+                const b=document.querySelector(".fst").style.backgroundColor="green";
+            }
+            else if(e.target.id ==="red"){
+                body.style.backgroundColor = "red";
+                const b=document.querySelector(".fst").style.backgroundColor="red";
+            }
+            else if(e.target.id ==="purple"){
+                body.style.backgroundColor = "purple";
+                const b=document.querySelector(".fst").style.backgroundColor="purple";
+            }
+        });
+    });
+</script>
+</html>
